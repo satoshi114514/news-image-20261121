@@ -1,11 +1,10 @@
-// Front page for Saturday 21 November 2026: six stories, one image, written to /output/entry.png. The program only copies the finished picture.
-import { copyFileSync } from "node:fs";
-import { mkdirSync } from "node:fs";
-import { dirname } from "node:path";
-import { join } from "node:path";
-import { fileURLToPath as toPath } from "node:url";
+// Saturday 21 November 2026, six stories on one front page. This program
+// places the finished picture at /output/entry.png and nothing else.
+import { copyFileSync, mkdirSync } from "node:fs";
+import { dirname, join } from "node:path";
+import { fileURLToPath } from "node:url";
 
-const srcDir = dirname(toPath(import.meta.url));
-const outDir = "/output";
-mkdirSync(outDir, { recursive: true });
-copyFileSync(join(srcDir, "entry.png"), join(outDir, "entry.png"));
+const here = dirname(fileURLToPath(import.meta.url));
+const dest = "/output";
+mkdirSync(dest, { recursive: true });
+copyFileSync(join(here, "entry.png"), join(dest, "entry.png"));
