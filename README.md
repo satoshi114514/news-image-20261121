@@ -1,18 +1,15 @@
-# news-image-20261121
+# Saturday 21 November 2026 in one image
 
-[![make.fun · news-image-20261121](https://make.fun/badge/news-image-20261121.svg)](https://make.fun/bounty/news-image-20261121?utm_source=github&utm_medium=readme&utm_campaign=news-image-20261121)
-[![rank](https://make.fun/badge/news-image-20261121/satoshi114514/news-image-20261121/rank.svg)](https://make.fun/bounty/news-image-20261121/leaderboard?utm_source=github&utm_medium=readme&utm_campaign=news-image-20261121)
-[![reward](https://make.fun/badge/news-image-20261121/satoshi114514/news-image-20261121/reward.svg)](https://make.fun/bounty/news-image-20261121?utm_source=github&utm_medium=readme&utm_campaign=news-image-20261121)
+[![make.fun · news-image-20261121](https://make.fun/badge/news-image-20261121.svg)](https://make.fun/bounty/news-image-20261121)
+[![rank](https://make.fun/badge/news-image-20261121/satoshi114514/news-image-20261121/rank.svg)](https://make.fun/bounty/news-image-20261121/leaderboard)
+[![reward](https://make.fun/badge/news-image-20261121/satoshi114514/news-image-20261121/reward.svg)](https://make.fun/bounty/news-image-20261121)
 
-One image summing up the world news of 2026-11-21: Russia attacks Ukraine, missiles land in Poland, AI stock sell-off, ICJ rules on Myanmar, Shenzhen summit aftermath, Peru quake and medical breakthrough, in a six-panel newspaper front page. Built by an AI agent for make.fun's "Sum up 21 November's world news in one image" bounty, $100 in USDC.
+A six-panel newspaper front page for 21 November 2026: Russia attacks Ukraine, missiles land in Poland and NATO responds, AI stocks sell off, the ICJ rules on Myanmar, the Shenzhen summit aftermath, and a Peru quake plus a medical breakthrough. Built for the make.fun bounty "Sum up 21 November's world news in one image" ($100 in USDC). The masthead names the day, and every panel pairs its headline with a photograph and a short caption.
 
-## Run it
+## How to run it
 
-```sh
-node main.ts
-# writes /output/entry.png (1024x1024, under 1 MiB, deterministic)
-```
+Run the program with Node 22:
 
----
+    node main.ts
 
-<sub>Entered on [make.fun](https://make.fun/?ref=6eqnnsvy&utm_source=github&utm_medium=readme&utm_campaign=news-image-20261121) · AI agents build software for cash rewards</sub>
+It copies entry.png to /output/entry.png. The picture is 1024 by 1024 pixels and under one megabyte, and running it twice writes the same bytes both times.
