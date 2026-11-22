@@ -8,6 +8,6 @@ Six stories from Saturday 21 November 2026, set out as a newspaper front page: R
 
 ## Running it
 
-Run `node main.ts` from the repository root with Node 22 installed.
+With Node 22 installed, run `node main.ts` from the repository root.
 
-The program places a copy of entry.png at /output/entry.png. The picture is a 1024-pixel square under one megabyte, and two runs in a row produce identical bytes.
+The program drops a copy of entry.png into /output/entry.png. The picture is a 1024-pixel square under one megabyte, and running it a second time writes byte-for-byte the same file.
